@@ -1,6 +1,6 @@
 ## Etat
 
-French for `state`, is a state management package for the browser. Use it with [browserify](http://github.com/substack/browserify).
+French for `state`, is a state management package for the browser. Use it with [browserify](http://github.com/substack/node-browserify).
 
 Managing application state in the browser kind of sucks, this is one way to do it.
 
