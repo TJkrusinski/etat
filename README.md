@@ -153,6 +153,10 @@ etat.create('this is my data');
 // the `foo` state's create method will just print the string "this is my data"
 ````
 
+## Future Design Goals
+
+I would love for this package to use an `EventEmitter` style interface. Rather than passing in methods on an object, it would make more sense to listen to events on an object passed back from creating a new state. Your parent contstructor object could return instances of event emitter's when calling `new etat.State('title')`. This could be beneficial could have increased object creation overhead. If there was some way to switch contexts of an `EventEmitter` under the hood that could be more beneficial and incure less object creation overhead.
+
 ## Tests
 
 `$ npm test`
